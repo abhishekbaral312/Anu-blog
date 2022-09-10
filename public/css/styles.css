@@ -1,0 +1,559 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #361500;
+  color: #1C0A00;
+  font-family: 'Cabin', sans-serif;
+  counter-reset: Serial;
+}
+h1,h3 {
+  font-family: 'Patua One', cursive;
+}
+tr td:first-child:before{
+  counter-increment: Serial;
+  content: counter(Serial);
+}
+.main{
+  width: 80%;
+  text-align: center;
+}
+.navbr{
+  position: static;
+  z-index: 1;
+  width: 100%;
+  margin-left: 15%;
+}
+.logo {
+  width: 70px;
+  float: left;
+  padding: 20px 20px 20px 3%;
+}
+.blgtxt{
+  float: left;
+  font-size: 2rem;
+  font-family: 'Satisfy', cursive;
+  color: #EADCA6;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 35px;
+}
+.navli {
+  height: 70px;
+  text-align: center;
+  padding: 20px 10%;
+  float: right;
+  font-size: 1.3rem;
+}
+.navli a{
+  display: inline-block;
+  text-decoration: none;
+  opacity: 80%;
+  padding: 20px;
+  color: #EADCA6;
+  font-weight: bold;
+}
+.navli a:hover{
+  opacity: 100%;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+.navbtn{
+  visibility: hidden;
+  width: 0px;
+}
+.navmenu {
+  visibility: hidden;
+  position: absolute;
+}
+.cover {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 12%;
+}
+.searching {
+  width: 170px;
+  position: absolute;
+  top: 422px;
+  right: 150px;
+  border: hidden;
+  border-radius: 15px;
+  z-index: 2;
+  box-shadow: 10px 10px 10px 5px;
+}
+.heading {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  background-color: #CC9544;
+  position: absolute;
+}
+.news {
+  width: 260px;
+  z-index: 3;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -50%;
+  transform: rotate(348deg);
+}
+.headingtext {
+  padding: 30px;
+  background-color: #EADCA6;
+  width: 80%;
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 20px;
+}
+.cardsec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 350px;
+}
+.card {
+  padding: 70px;
+  width: 300px;
+}
+.mag{
+  width: 120px;
+  z-index: 3;
+  position: absolute;
+  margin-top: -33px;
+  margin-left: 60px;
+}
+.cardtxt {
+  width: 260px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.cardtxt p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+.cardimg {
+  width: 260px;
+  height: 172px;
+  border-radius: 40px;
+  padding-top: 20px;
+}
+.cardint {
+  background-color: #CC9544;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 10px 10px 10px 10px;
+}
+.form {
+background-image: url(/images/wooden.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 500px;
+position: absolute;
+width: 100%;
+box-shadow: inset 0px 20px 16px 10px rgb(54 21 0);
+}
+.man {
+  width: 315px;
+  z-index: 3;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: -55%;
+  filter: contrast(10px);
+}
+.formint {
+  width: 80%;
+  height: 70%;
+  backdrop-filter: blur(5px);
+  margin: auto;
+  margin-top: 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.formtxt {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.formicon i {
+  width: 70px;
+  padding-top: 20px;
+  color: white;
+}
+.formicon i:hover {
+  color: wheat;
+}
+.forminput {
+  text-align: center;
+  margin-top: 5%;
+}
+.forminput input {
+  border: none;
+  border-bottom: 2px solid white;
+  width: 60%;
+  height: 45px;
+  background: transparent;
+  color: white;
+  font-size: 1.2em;
+}
+.forminput ::placeholder {
+  color: white;
+  font-weight: bold;
+}
+.forminput input:focus {
+  outline: none;
+}
+.butn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 25px;
+  background: rgba(255,255,255,0.5);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  margin-top: 40px;
+}
+
+.butn:hover {
+  background: #3cfc49;
+  background-image: -webkit-linear-gradient(top, #3cfc49, #3ab322);
+  background-image: -moz-linear-gradient(top, #3cfc49, #3ab322);
+  background-image: -ms-linear-gradient(top, #3cfc49, #3ab322);
+  background-image: -o-linear-gradient(top, #3cfc49, #3ab322);
+  background-image: linear-gradient(to bottom, #3cfc49, #3ab322);
+  text-decoration: none;
+}
+
+.compose{
+  padding-top: 9%;
+  color: wheat;
+  margin-left: 26%;
+}
+.composeform{
+  width: 390px;
+  margin-left: 26%;
+}
+.composeinput{
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+  width: 100%;
+  background: wheat;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #361500;
+  border: none;
+  margin: 27px 0px 27px -29px;
+}
+.composeform button{
+  background: #f5c46a;
+  background-image: -webkit-linear-gradient(top, #f5c46a, #f5a000);
+  background-image: -moz-linear-gradient(top, #f5c46a, #f5a000);
+  background-image: -ms-linear-gradient(top, #f5c46a, #f5a000);
+  background-image: -o-linear-gradient(top, #f5c46a, #f5a000);
+  background-image: linear-gradient(to bottom, #f5c46a, #f5a000);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.composeform span{
+  font-size: 30px;
+}
+.composeform textarea{
+  height: 160px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+  background: wheat;
+  font-size: 15px;
+  line-height: 3;
+  color:#361500;
+  border: none;
+  margin: 27px 0px 27px -29px;
+}
+.composefilebtn{
+  position: absolute;
+  margin-top: -43px;
+  font-size: 29px;
+  margin-left: -68px;
+  opacity: 0;
+  cursor: pointer;
+}
+.publishbtn{
+    margin: 140px !important;
+    cursor: pointer;
+}
+.headcheckbox{
+  position: absolute;
+  margin-left: -243px;
+  margin-top: 144px;
+  box-sizing: 20px;
+  width: 100px;
+  height: 38px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.post{
+  width: 100%;
+  padding: 20px;
+  background-color: wheat;
+  color: white;
+  margin: 100px 50px 100px 110px;
+}
+.admintable{
+  width: 71%;
+  padding: 150px 27%;
+}
+.admintable table {
+  border-collapse: collapse;
+}
+.admintable td{
+  text-align: center;
+  border-bottom: 1px solid #361500;
+}
+.admintable th {
+  background-color: #a44200;
+}
+.admintable tr:hover{
+  background-color: #deb887;
+}
+.deletebtn input[type="checkbox"]{
+  display: block;
+  text-align:center;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 17px;
+  margin-top: -17px;
+}
+.deletebtn i.fa-solid {
+  font-size: 25px;
+  transition: 0.5s;
+  position: relative;
+  cursor: pointer;
+}
+.deletebtn i.fa-solid:hover {
+  color: red;
+}
+
+.postheading{
+  border-radius: 15px;
+  margin: 16%;
+  background-color: #cc9544;
+  padding: 8px;
+  width: 90%;
+}
+.postpic{
+  width: 100%;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 12%;
+  border-radius: 30px;
+}
+
+@media (max-width:1045px) {
+  .main{
+    width: 100%;
+  }
+  .cover {
+    margin-left: 0;
+  }
+  .navbr{
+    margin-left: 0%;
+  }
+  .cardsec{
+    grid-template-columns: 1fr 1fr;
+    margin-top: 300px;
+  }
+  .formtxt{
+    width: 100%;
+  }
+  .postpic{
+    margin-left: 0;
+  }
+  .postheading{
+    margin: 4%;
+  }
+}
+
+
+@media (max-width:850px) {
+  .navli{
+    padding: 20px 5%;
+  }
+  .man{
+    margin-top: 12px;
+    margin-left: -60%;
+  }
+  .card {
+    padding: 44px;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width:750px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .main{
+    width: 100%;
+  }
+  .navbr{
+    margin-left: 5%;
+  }
+  .blgtxt{
+    padding-left: 30px;
+  }
+  .navli{
+    visibility: hidden;
+    width: 0px;
+    padding: 0px;
+  }
+  .navicon{
+    visibility: visible;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #1C0A00;
+  }
+  .navbtn{
+    float: right;
+    visibility: visible;
+    width: 50px;
+    margin: 42px 47px 10px 10px;
+    border: none;
+    background-color: #EADCA6;
+    border-radius: 10px;
+  }
+  .navbtn:hover{
+    background-color: #CC9544;
+  }
+  .navmenu{
+    display: none;
+    visibility: visible;
+    width: 200px;
+    z-index: 5;
+    position: fixed;
+    margin-top: 0px;
+    background-color: #EADCA6;
+    margin-left: 49%;
+    border-radius: 10px;
+  }
+  .navmenu ul{
+    list-style-type: none;
+    padding: 0px;
+  }
+  .navmenu a{
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-weight: bold;
+    color: #1C0A00;
+  }
+  .cover {
+    width: 100%;
+    height: 200px;
+    margin-left: 0;
+  }
+  .headingtext{
+    margin: 20px auto;
+  }
+  .heading{
+    height: auto;
+  }
+  .searching{
+    width: 129px;
+    top: 245px;
+    right: 27px;
+  }
+  .cardsec{
+    grid-template-columns: 1fr;
+    margin-top: 286px;
+  }
+  .card{
+    padding: 50px;
+    padding-left: 25%;
+  }
+  .news{
+    width: 140px;
+    margin-top: 7px;
+    margin-left: -186px;
+  }
+  .formint{
+    grid-template-columns: 1fr;
+  }
+  .formtxt{
+    width: 100%;
+  }
+  .formtxt p {
+    visibility: collapse;
+    width: 0;
+    height: 0;
+  }
+  .formicon{
+    margin-top: -42px;
+  }
+  .forminput input {
+    width: 90%;
+    height: 40px;
+  }
+  .man{
+    width: 212px;
+    margin-left: -262px;
+    margin-top: -18px;
+  }
+  .admintable{
+    overflow-x: auto;
+    width: 90%;
+    padding: 0;
+  }
+
+  .postheading{
+    margin: 3%;
+  }
+  .compose{
+    margin-left: 0;
+  }
+  .composeform{
+    margin-left: 0;
+  }
+  .composeinput{
+    width: 70%;
+    margin-right: -13px;
+  }
+  .composeform span{
+    margin-left: -16px;
+  }
+  .composeform textarea{
+    width: 70%;
+    margin-right: -13px;
+  }
+  .publishbtn{
+    margin: 43px !important;
+  }
+  .composefilebtn{
+  margin-top: -38px;
+  font-size: 21px;
+  margin-left: -98px;
+  }
+}
+@media (max-width:450px) {
+  .card{
+    padding-left: 10%;
+  }
+}

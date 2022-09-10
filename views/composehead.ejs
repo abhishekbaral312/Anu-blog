@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<div class="compose">
+  <h1 style="margin:80px;">Compose</h1>
+   <% headings.forEach(function(heading){ %>
+  <form class="composeform" action="/update" method="post">
+    <span>Content</span><br>
+    <textarea name="headBody" rows="8" cols="80" required></textarea><br>
+    <button style="margin:140px; cursor:pointer;">Publish</button>
+      <input class="headcheckbox" type="checkbox" name="checkbox" value="<%= heading._id %>" onchange="this.form.submit()">
+  </form>
+     <% }) %>
+</div>
+
+
+
+<%- include('partials/footer'); -%>

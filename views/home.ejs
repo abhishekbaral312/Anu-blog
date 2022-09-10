@@ -1,0 +1,33 @@
+<%- include('partials/header'); -%>
+
+<img class="cover" src="/images/cover.jpg" alt="cover">
+<img class="searching" src="images/searching.jpeg" alt="small pic">
+<div class="heading">
+  <img class="news" src="/images/news.png" alt="">
+  <div class="headingtext">
+    <h1>Today's Heading</h1>
+    <% headings.forEach(function(heading){ %>
+    <p><%= heading.content %> </p>
+    <% }) %>
+  </div>
+</div>
+
+<div class="cardsec">
+  <% posts.forEach(function(post){ %>
+    <div class="card">
+      <img class="mag" src="/images/mag.png" alt="">
+      <div class="cardint">
+        <img class="cardimg" src="<%= post.image %>" alt="image">
+        <div class="cardtxt">
+          <h3><%= post.title %></h3>
+          <p>  <%= post.content.substring(0, 200) + "..." %>
+            <a href="/posts/<%= post._id %>">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+
+<%- include('partials/footer'); -%>
