@@ -364,6 +364,23 @@ box-shadow: inset 0px 20px 16px 10px rgb(54 21 0);
   margin-left: 12%;
   border-radius: 30px;
 }
+.topichead{
+  padding: 7em 40em 3em;
+}
+.topichead h1{
+  color: wheat;
+  font-size: 3em;
+}
+.topcardsec{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
 
 @media (max-width:1045px) {
   .main{
